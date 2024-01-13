@@ -20,15 +20,11 @@ class b : public a
     }
 
 };
-
 int main()
 {
    b bb;
-   a aa;
    bb.display(); 
-   aa.display();
-
-
+   //aa.display();
     return 0;
 }  
 

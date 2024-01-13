@@ -3,9 +3,7 @@
 using namespace std;
 
 class student
-
     {
-
         int marks1,marks2;
         public:
         student()
