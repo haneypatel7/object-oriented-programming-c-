@@ -69,15 +69,49 @@ class dll
         }
 
     }
+    void deletefirst()
+    {
+        if(head==NULL)
+        {
+            cout<<"block is empty"<<endl;
+        }
+        else
+        {
+            head=head->next;
+            cout<<"data deleted"<<endl;
+        }
+    }
+
+    void deletelast()
+    {
+        node *temp=head;
+        if(head==NULL)
+        {
+            cout<<"block is empty"<<endl;
+        }
+        else
+        {
+            while(temp->next!=NULL)
+            {
+                temp=temp->next;
+            }
+            temp->next=NULL;
+            temp->prev=NULL;
+            cout<<"data deleted"<<endl;
+        }
+    }
 };
 
 int main()
 {
     dll d;
-    d.insertfirst(1);
-    d.insertfirst(2);
     d.insertfirst(3);
-    d.insertLast(4);
+    d.insertfirst(2);
+    d.insertfirst(1);
+    
     d.display();
+    d.deletelast();
+    d.display();
+    
     return 0;
 }
