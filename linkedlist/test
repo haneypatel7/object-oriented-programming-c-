@@ -21,7 +21,21 @@ class dll
     node * head=NULL;
     public:
 
-    
+    void insertfirst(int data)
+    {
+        node* newnode=new node(data);
+        if(head==NULL)
+        {
+            head=newnode;
+            cout<<"data inserted successfully"<<endl;
+        }
+        else
+        {
+            newnode->next=head;
+            head=newnode;
+            cout<<"data inserted"<<endl;
+        }
+    }
     public:
     void display()
     {
@@ -55,7 +69,37 @@ class dll
         }
 
     }
-    
+    void deletefirst()
+    {
+        if(head==NULL)
+        {
+            cout<<"block is empty"<<endl;
+        }
+        else
+        {
+            head=head->next;
+            cout<<"data deleted"<<endl;
+        }
+    }
+
+    void deletelast()
+    {
+        node *temp=head;
+        if(head==NULL)
+        {
+            cout<<"block is empty"<<endl;
+        }
+        else
+        {
+            while(temp->next!=NULL)
+            {
+                temp=temp->next;
+            }
+            temp->next=NULL;
+            temp->prev=NULL;
+            cout<<"data deleted"<<endl;
+        }
+    }
 };
 
 int main()
