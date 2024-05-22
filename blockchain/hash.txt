@@ -28,6 +28,6 @@ int main() {
     cin>>input;
     
     string res=gethash(input);
-    cout<<hex<<res;
+    cout<<res;
     return 0;
 }

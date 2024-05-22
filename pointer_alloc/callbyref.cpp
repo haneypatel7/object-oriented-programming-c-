@@ -10,14 +10,14 @@ void swap(int &a,int &b)
 
 int main()
 {
-    int a=5;
-    int b=4;
+    int c=5;
+    int d=4;
 
-    swap(a,b);
+    swap(c,d);
 
-    cout<<"a is:"<<a<<endl;
+    cout<<"c is:"<<c<<endl;
 
-    cout<<"b is:"<<b<<endl;
+    cout<<"d is:"<<d<<endl;
 
 
     return 0;

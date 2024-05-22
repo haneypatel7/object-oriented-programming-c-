@@ -1,0 +1,5 @@
+map wallet
+circular matrics
+notepade
+shuffle
+calculator
